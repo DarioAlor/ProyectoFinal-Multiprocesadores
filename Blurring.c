@@ -10,8 +10,8 @@ int main() {
     const double startTime = omp_get_wtime();
 
     FILE *image, *outputImage, *lecturas;
-    image = fopen("f1.bmp","rb");          //Imagen original a transformar
-    outputImage = fopen("f2_dd.bmp","wb");    //Imagen transformada
+    image = fopen("f9.bmp","rb");          //Imagen original a transformar
+    outputImage = fopen("f9_google_b.bmp","wb");    //Imagen transformada
     long ancho;
     long alto;
     int nLinea=0;
