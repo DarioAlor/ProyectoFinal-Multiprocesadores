@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define NUM_THREADS 1
+#define NUM_THREADS 100
 
 int main() {
     double t1, t2, tiempo;
@@ -11,7 +11,7 @@ int main() {
 
     FILE *image, *outputImage, *lecturas;
     image = fopen("f9.bmp","rb");          //Imagen original a transformar
-    outputImage = fopen("f9_ibm_1.bmp","wb");    //Imagen transformada
+    outputImage = fopen("f9_ibm_100.bmp","wb");    //Imagen transformada
     long ancho;
     long alto;
     int nLinea=0;
