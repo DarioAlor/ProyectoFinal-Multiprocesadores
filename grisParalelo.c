@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define NUM_THREADS 30
+#define NUM_THREADS 50
 
 int main()
 {
