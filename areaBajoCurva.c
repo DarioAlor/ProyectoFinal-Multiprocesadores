@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <omp.h>
-static long num_pasos = 10000000000;
+static long num_pasos = 100000000;
 double paso;
-#define NUM_THREADS 2
+#define NUM_THREADS 700
 
 void main() {
     int i, nthreads;
@@ -33,4 +33,5 @@ void main() {
     tiempo = t2-t1;
     printf("pi = (%lf)\n", pi);
     printf("tomo (%lf) segundos\n", (endTime-startTime));
+    printf("numero de threads: %d\n", NUM_THREADS);
 }

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <omp.h>
 
-#define NUM_THREADS 2
+#define NUM_THREADS 1
 
 int main()
 {
@@ -12,7 +12,7 @@ int main()
 
     FILE *image, *outputImage, *lecturas;
     image = fopen("f9.bmp","rb");          //Imagen original a transformar
-    outputImage = fopen("f9_dd.bmp","wb");    //Imagen transformada
+    outputImage = fopen("f9_google.bmp","wb");    //Imagen transformada
     long ancho;
     long alto;
     unsigned char r, g, b;               //Pixel
@@ -67,6 +67,7 @@ int main()
     const double endTime = omp_get_wtime();
     tiempo = t2-t1;
     printf("Tomo (%lf) segundos\n", (endTime-startTime));
+    printf("Numero de threads: %d\n", NUM_THREADS);
 
     return 0;
 }
